@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Cafe24Supermagic-Bold-v1.0";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "Cafe24Supermagic-Bold-v1.0";
+  margin: 0px;
+  background-image: url("img/05.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.7);
+  min-height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.task-area {
+  border: 1px solid darkgrey;
+}
+
+#task-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  width: 270px;
+}
+
+#task-input:focus {
+  outline: none;
+}
+
+.task-tabs {
+  display: flex;
+  border-bottom: 1px solid darkgrey;
+  position: relative;
+}
+
+.task-tabs div {
+  padding: 1em;
+  cursor: pointer;
+}
+
+#under-line {
+  height: 4px;
+  background-color: skyblue;
+  position: absolute;
+  width: 55px;
+  left: 0px;
+  top: 52px;
+  padding: 0px;
+  transition: 0.5s ease-in-out;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.task-done {
+  text-decoration: line-through;
+}
+
+.task-bg {
+  background-color: darkgray;
+}
+
+.task-button button:first-child {
+  color: darkgreen;
+}
+
+.task-button button:last-child {
+  color: darkred;
+}
